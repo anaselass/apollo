@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-glass-bg: rgba(18, 20, 28, 0.45);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+  --color-accent-cyan: #00E5FF;
+  --color-accent-emerald: #00FF9D;
+  --color-accent-red: #FF3366;
+  --color-accent-amber: #F59E0B;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #94A3B8;
+  --color-text-tertiary: #64748B;
+  
+  --font-sans: 'Outfit', sans-serif;
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body, #root {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(circle at top right, #111B3D 0%, #080A11 40%, #040508 100%);
+    font-family: var(--font-sans);
+    display: flex;
+    line-height: 1.5;
+    color: var(--color-text-primary);
+  }
+}
